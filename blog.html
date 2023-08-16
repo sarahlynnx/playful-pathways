@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <link rel = "stylesheet" href = "styles.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+    <title>Playful Pathways Therapy</title>
+  </head>
+  <body>
+    <div>
+      <img class = "custom-image" alt = "logo" src = "images/logo.jpg"></img>
+      <p class="title">Playful Pathways Therapy</p>
+    </div>
+    <header>
+      <nav>
+          <ul>
+              <li><a href = "index.html">Home</a></li>
+              <li><a href = "blog.html">Blog</a></li>
+              <li><a href = "meet_the_team.html">Meet the Team</a></li>
+              <li>
+                  <a href = "patient_information.html">Patient Information</a>
+                  <ul class = "sub-menu">
+                      <li><a href = "insurance.html">Insurance</a></li>
+                  </ul>
+              </li>
+              <li><a href = "contact_us.html">Contact Us</a></li>
+          </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <section class="mobile-nav">
+          <ul class = "mobile-menu">
+              <li class = "home"><a href = "index.html">Home</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href = "meet_the_team.html">Meet the Team</a></li>
+              <li>
+                  <a href = "patient_information.html">Patient Information</a>
+                  <ul class = "sub-menu">
+                      <li><a href = "insurance.html">Insurance</a></li>
+                  </ul>
+              </li>
+              <li><a href = "contact_us.html">Contact Us</a></li>
+          </ul>
+          </section>
+      </div>
+  </header>
+        <div class = "slideshow-container fade">
+
+          <div class = "containers">
+            <div class = "info">
+              <p class = "quotation-mark">"</p>
+              <p class = "review">My child has been attending pediatric occupational therapy sessions, and the results have been truly remarkable. They struggled with fine motor skills and sensory issues, but the therapist's patience and creativity have made the sessions enjoyable and effective. Through fun activities and games, my child has made significant progress in handwriting, coordination, and sensory regulation. I'm incredibly grateful for the therapist's expertise and dedication.</p>
+              <p class = "review-name">Destiny</p>
+            </div>
+          </div>
+
+          <div class = "containers">
+            <div class = "info">
+              <p class = "quotation-mark">"</p>
+              <p class = "review">Testimonial Two</p>
+              <p class = "review-name">Anna</p>
+            </div>
+          </div>
+          <div class = "containers">
+            <div class = "info">
+              <p class = "quotation-mark">"</p>
+              <p class = "review">Testimonial Three</p>
+              <p class = "review-name">Donna</p>
+            </div>
+          </div>
+
+          <a class = "back" onclick = "plusSlides(-1)">&#10094;</a>
+          <a class = "forward" onclick = "plusSlides(1)">&#10095;</a>
+        <br>
+
+          <div class = "dot-style">
+              <span class = "dots" onclick = "currentSlide(1)"></span>
+              <span class = "dots" onclick = "currentSlide(2)"></span>
+              <span class = "dots" onclick = "currentSlide(3)"></span>
+          </div>
+        </div>
+    <footer>
+      <p>604 Oak St, Crosby, MN 56441, USA</p>
+      <a id="facebook-link" href="https://www.facebook.com/people/Playful-Pathways-Therapy/100092405804453/?mibextid=LQQJ4d" target="_blank"><img  class = "facebook" alt = "facebook logo" src = "images/logo-facebook.png"></img></a>
+      <p>©2023 by Playful Pathways Therapy, LLC.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+

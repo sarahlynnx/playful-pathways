@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>Playful Pathways Therapy</title>
+  </head>
+  <body>
+    <div>
+      <img class = "custom-image" alt = "logo" src = "images/logo.jpg"></img>
+      <p class="title">Playful Pathways Therapy</p>
+    </div>
+    <header>
+      <nav>
+          <ul>
+              <li><a href = "index.html">Home</a></li>
+              <li><a href = "blog.html">Blog</a></li>
+              <li><a href = "meet_the_team.html">Meet the Team</a></li>
+              <li>
+                  <a href = "patient_information.html">Patient Information</a>
+                  <ul class = "sub-menu">
+                      <li><a href = "insurance.html">Insurance</a></li>
+                  </ul>
+              </li>
+              <li><a href = "contact_us.html">Contact Us</a></li>
+          </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <section class="mobile-nav">
+          <ul class = "mobile-menu">
+              <li class = "home"><a href = "index.html">Home</a></li>
+              <li><a href = "blog.html">Blog</a></li>
+              <li><a href = "meet_the_team.html">Meet the Team</a></li>
+              <li>
+                  <a href = "patient_information.html">Patient Information</a>
+                  <ul class = "sub-menu">
+                      <li><a href = "insurance.html">Insurance</a></li>
+                  </ul>
+              </li>
+              <li><a href = "contact_us.html">Contact Us</a></li>
+          </ul>
+          </section>
+      </div>
+    </header>
+    <main id = "main-doc">
+      <div class = "main-container">
+        <div class = "main-container-text">
+          <h1>Clinical Staff</h1>
+          <p>Meet Our Health Care Professionals</p>
+        </div>
+      </div>
+      <div class = "staff-img-container">
+      <img class = "staff-img" alt = "staff-image" src = "images/logo.jpg"></img>
+      </div>
+      <div class = "staff-container">
+        <div class = "staff-container-text">
+        <p class = "name">Alisha Elsperger, MOTR/L</p>
+        <p class = "occupational-title">Occupational Therapist / Owner</p>
+        <p class = "description">Alisha is a board certified and licensed OT in MN. She focuses on the pediatric population. Her areas of interest include fine and gross motor development, infant development, sensory integration, and social emotional regulation.</p>
+        <p class = "quote">“My family moved to the Crosby area in spring of 2022 and I have been a stay-at-home mom raising my littles. During this time, I have been dreaming of starting my own practice to help fill the growing need for pediatric therapy in the Crosby area. The time has come for my dream to become action as I open this OT practice. I have prior experience in a variety of settings including: outpatient pediatrics (hospital and private practice), hydrotherapy, skilled nursing facilities, and assisted living. I have worked with children as young as 2 months old living with conditions such as autism, ADHD, prematurity, developmental delay, Down syndrome, cerebral palsy, and genetic disorders.”</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>604 Oak St, Crosby, MN 56441, USA</p>
+      <a id="facebook-link" href="https://www.facebook.com/people/Playful-Pathways-Therapy/100092405804453/?mibextid=LQQJ4d" target="_blank"><img  class = "facebook" alt = "facebook logo" src = "images/logo-facebook.png"></img></a>
+      <p>©2023 by Playful Pathways Therapy, LLC.</p>
+    </footer>
+    <script src = "script.js"></script>
+  </body>
+</html>

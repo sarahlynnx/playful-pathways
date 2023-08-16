@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <link rel = "stylesheet" href = "styles.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+    <title>Playful Pathways Therapy</title>
+  </head>
+  <body>
+    <div>
+      <img class = "custom-image" alt = "logo" src = "images/logo.jpg"></img>
+      <p class="title">Playful Pathways Therapy</p>
+    </div>
+    <header>
+      <nav>
+          <ul>
+              <li><a href = "index.html">Home</a></li>
+              <li><a href = "blog.html">Blog</a></li>
+              <li><a href = "meet_the_team.html">Meet the Team</a></li>
+              <li>
+                  <a href = "patient_information.html">Patient Information</a>
+                  <ul class = "sub-menu">
+                      <li><a href = "insurance.html">Insurance</a></li>
+                  </ul>
+              </li>
+              <li><a href = "contact_us.html">Contact Us</a></li>
+          </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <section class="mobile-nav">
+          <ul class = "mobile-menu">
+              <li class = "home"><a href = "index.html">Home</a></li>
+              <li><a href = "blog.html">Blog</a></li>
+              <li><a href = "meet_the_team.html">Meet the Team</a></li>
+              <li>
+                  <a href = "patient_information.html">Patient Information</a>
+                  <ul class = "sub-menu">
+                      <li><a href = "insurance.html">Insurance</a></li>
+                  </ul>
+              </li>
+              <li><a href = "contact_us.html">Contact Us</a></li>
+          </ul>
+          </section>
+      </div>
+  </header>
+    <main id = "main-doc">
+    <div class = "welcome-container">
+        <h1>Welcome</h1>
+        <p>Welcome to Playful Pathways Therapy, a new pediatric occupational therapy practice opening fall 2023 in Crosby, MN.</p>
+        <p>The Playful Pathways name came from the fact that individuals continue to form new neural pathways in the brain in response to experiences. And in children these experiences are often through play! These pathways are how children learn new skills or relearn past skills lost through an injury or illness.</p>
+        <p>At Playful Pathways, we will work together as a team (therapist, patient, and family) to help your child develop skills and abilities in a playful environment.</p>
+        <p>Playful Pathways Therapy will be located in Cuyuna Lakes Community Church (formally Crosby Assembly of God). </p>
+    </div>
+    <div class = "media-container">
+      <img alt = "crafts" src = "images/crafts2.jpg"></img>
+      <img alt = "blocks" src = "images/blocks.jpg"></img>
+      <img alt = "parachute" src = "images/parachute.jpg"></img>
+      <img alt = "coloring" src = "images/crafts3.jpg"></img>
+    </div>
+        <div class = "practice-container">
+          <img class = "tableimg" alt = "table crafts" src = "images/table.jpg"></img>
+          <div class = "practice-scope-box">
+          <div class = "practice-scope-text">
+            <p>Occupational Therapists look at each individual as a whole. We use a combination of techniques to work on different skills. For children, we use play to break down an activity’s tasks and make learning fun. Some areas occupational therapists can work on include:</p>
+            <ul>
+              <li>Fine Motor Skills</li>
+              <li>Gross Motor Skills</li>
+              <li>Sensory Integration</li>
+              <li>Emotional Regulation</li>
+              <li>Activities of Daily Living (Feeding, Dressing, Self Cares)</li>
+            </ul>
+            <p>Physician referral is required to receive occupational therapy services. Please let me know if you need assistance with this.</p>
+          </div>
+          </div>
+        </div>
+        <div class = "slideshow-container fade">
+
+          <div class = "containers">
+            <div class = "info">
+              <p class = "quotation-mark">"</p>
+              <p class = "review">My child has been attending pediatric occupational therapy sessions, and the results have been truly remarkable. They struggled with fine motor skills and sensory issues, but the therapist's patience and creativity have made the sessions enjoyable and effective. Through fun activities and games, my child has made significant progress in handwriting, coordination, and sensory regulation. I'm incredibly grateful for the therapist's expertise and dedication.</p>
+              <p class = "review-name">Destiny</p>
+            </div>
+          </div>
+
+          <div class = "containers">
+            <div class = "info">
+              <p class = "quotation-mark">"</p>
+              <p class = "review">Testimonial Two</p>
+              <p class = "review-name">Anna</p>
+            </div>
+          </div>
+
+          <div class = "containers">
+            <div class = "info">
+              <p class = "quotation-mark">"</p>
+              <p class = "review">Testimonial Three</p>
+              <p class = "review-name">Donna</p>
+            </div>
+          </div>
+
+          <a class = "back" onclick = "plusSlides(-1)">&#10094;</a>
+          <a class = "forward" onclick = "plusSlides(1)">&#10095;</a>
+        <br>
+
+          <div class = "dot-style">
+              <span class = "dots" onclick = "currentSlide(1)"></span>
+              <span class = "dots" onclick = "currentSlide(2)"></span>
+              <span class = "dots" onclick = "currentSlide(3)"></span>
+          </div>
+        </div>
+
+        <div class = "hours-container">
+          <div class = "hours-box">
+            <div class = "business-hours-text">
+              <h2>Opening Hours</h2>
+              <p>Monday and Thursday 9:00am - 6:00pm.</p>
+              <p>Hours to be added as needed.</p>
+              <p>Call to schedule an appointment today.</p>
+            </div>
+          </div>
+          <img class = "craftsimg" alt = "crafting" src = "images/crafts.jpg"></img>
+        </div>
+    </main>
+    <footer>
+      <p>604 Oak St, Crosby, MN 56441, USA</p>
+      <a id="facebook-link" href="https://www.facebook.com/people/Playful-Pathways-Therapy/100092405804453/?mibextid=LQQJ4d" target="_blank"><img  class = "facebook" alt = "facebook logo" src = "images/logo-facebook.png"></img></a>
+      <p>©2023 by Playful Pathways Therapy, LLC.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
