@@ -22,7 +22,7 @@ body {
     font-family: 'Open Sans';
 }
 
-/* Page 1 */
+/* Page 1 -HOME */
 
 .title {
     font-weight: bold;
@@ -104,7 +104,7 @@ body {
     padding: 10px;
 }
 
-/* PAGE 2 */
+/* PAGE 2 -MEET YOUR THERAPIST */
 
 .clinical-staff-container {
     background-color: var(--main-color);
@@ -131,7 +131,23 @@ body {
     line-height: 2rem;
 }
 
-/* PAGE 3 */ 
+/* PAGE 3 -SERVICES */
+
+.services-container {
+    background-color: var(--main-color);
+}
+
+.services-box {
+    margin: auto;
+    max-width: 900px;
+}
+
+.services-box h2 {
+    color: var(--heading-color);
+    text-decoration: underline;
+}
+
+/* PAGE 4 -PATIENT INFORMATION */ 
 
 .patient-portal-container {
     background-color:  var(--main-color);
@@ -160,7 +176,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* PAGE 4 */
+/* PAGE 5 -INSURANCE */
 
 .info-container h2 {
     color: var(--heading-color);
@@ -177,7 +193,7 @@ body {
     line-height: 2rem;
 }
 
-/* PAGE 5 */
+/* PAGE 6 -FAQS */
 
 .faq-container {
     background-color: var(--main-color);
@@ -202,7 +218,10 @@ body {
     margin-bottom: 20px;
 }
 
-/* PAGE 6 */
+/* PAGE 7 -BLOG */
+
+
+/* PAGE 8 -CONTACT US */
 
 .contact-us-container h2 {
     color: var(--heading-color);
