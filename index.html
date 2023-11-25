@@ -1,86 +1,88 @@
 <!DOCTYPE html>
 <html lang = "en">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
 
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-      
-      <link rel="stylesheet" href="styles.css">
-      <script src="https://kit.fontawesome.com/5276d236c8.js" crossorigin="anonymous"></script>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
-      
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/5276d236c8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
-      <title>Playful Pathways Therapy</title>
-    </head>
+    <title>Playful Pathways Therapy</title>
+  </head>
   
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
 
-    <header>
-      <img class = "custom-image" alt = "logo" src = "images/logo.jpg"></img>
-      <p class="title">Playful Pathways Therapy</p>
+    <header class="container-fluid">
+      <img class = "img-fluid" style="max-width: 150px;" alt = "logo" src = "images/logo.jpg"></img>
+      <h3 class="title my-0">Playful Pathways Therapy</h3>
     </header>
 
-        <div>
+    <nav class="navbar navbar-expand-sm custom-nav">
 
-            <nav class="navbar navbar-expand-sm custom-nav">
+        <div class="container">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+          
+            <ul class="navbar-nav">
 
-                <div class="container">
-                  
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  
-                  <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-                  
-                    <ul class="navbar-nav">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                    
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                      
-                        <li class="nav-item">
-                            <a class="nav-link" href="meet_the_team.html">Meet the Team</a>
-                        </li>
-                      
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="patient_information.html">Patient Information</a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="insurance.html">Insurance</a></li>
-                              <li><a class="dropdown-item" href="forms.html">Forms</a></li>
-                            </ul>
-                          </li>   
-
-                        <li class="nav-item">
-                          <a class="nav-link" href="contact_us.html">Contact Us</a>
-                      </li>  
-                      
-                    </ul>
-
-                  </div>
-
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="meet_your_therapist.html">Meet Your Therapist</a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="patient_information.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Patient Information</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="patient_information.html">Patient Information</a>
+                  <a class="dropdown-item" href="insurance.html">Insurance</a>
+                  <a class="dropdown-item" href="faq.html">FAQ</a>
                 </div>
+              </li>     
 
-            </nav>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact_us.html">Contact Us</a>
+              </li>  
+              
+            </ul>
+
+          </div>
+
+        </div>
+
+    </nav>
+
     <main id = "main-doc">
+
       <div class = "container-fluid welcome-container p-5">
         <div class = "welcome-box">
           <h1 class="display-1">Welcome</h1>
-          <p>Welcome to Playful Pathways Therapy, a new pediatric occupational therapy practice opening fall 2023 in Crosby, MN.</p>
-          <p>The Playful Pathways name came from the fact that individuals continue to form new neural pathways in the brain in response to experiences. And in children these experiences are often through play! These pathways are how children learn new skills or relearn past skills lost through an injury or illness.</p>
-          <p>At Playful Pathways, we will work together as a team (therapist, patient, and family) to help your child develop skills and abilities in a playful environment.</p>
-          <p>Playful Pathways Therapy will be located in Cuyuna Lakes Community Church (formally Crosby Assembly of God). </p>
+          <p>Welcome to Playful Pathways Therapy, a new pediatric occupational therapy practice now open in Crosby, MN. </p>
+          <p>The Playful Pathways name came from the understanding that individuals continue to form new neural pathways in the brain in response to experiences. These pathways are how we adapt and learn new skills or relearn past skills lost through an injury or illness. In children, the most powerful learning experiences are often through play!</p>
+          <p>At Playful Pathways Therapy, we will work together as a team (therapist, patient, and family) to help your child develop skills and abilities in a playful environment. During our OT sessions, I will provide the family with information on what was completed and how to incorporate these activities into their home. Using this approach, the child has more opportunities to practice their skills and develop their abilities more effectively.</p>
+          <p>Playful Pathways Therapy is located on the second floor of Cuyuna Lakes Community Church (formally Crosby Assembly of God). Please use the north facing doors with Playful Pathways Therapy signage.  </p>
         </div>
       </div>
+
       <div class="container-fluid my-5">
         <div class="img-carousel owl-carousel owl-theme">
             <div class="item">
@@ -99,25 +101,19 @@
       </div>
 
       <div class = "container practice-container p-3">
-        <div class="row justify-content-center gy-2">
+        <div class="row d-flex align-items-center justify-content-center gy-2">
           <div class="img-box col-lg">
             <img class = "img-fluid" alt = "Table Crafts" src = "images/table.jpg"/>
           </div>
           <div class = "practice-scope-box col-lg">
-              <p>Occupational Therapists look at each individual as a whole. We use a combination of techniques to work on different skills. For children, we use play to break down an activity’s tasks and make learning fun. Some areas occupational therapists can work on include:</p>
-              <ul>
-                <li>Fine Motor Skills</li>
-                <li>Gross Motor Skills</li>
-                <li>Sensory Integration</li>
-                <li>Emotional Regulation</li>
-                <li>Activities of Daily Living (Feeding, Dressing, Self Cares)</li>
-              </ul>
-              <p>Physician referral is required to receive occupational therapy services. Please let me know if you need assistance with this.</p>
+            <h2 class="display-5">Our Approach</h2>
+            <p>Our Occupational Therapy Clinic invites you to become a part of our growing and supportive community. At Playful Pathways Therapy, we want to know your interests and values so we can provide you with the best treatment in a way that makes sense to you. We also aim to make therapy fun so your child enjoys coming and completing the activities. "Learning functional skills through playful interactions" is our motto and is what strongly influences each session.</p>
+            <p>Occupational therapists look at the whole person during an evaluation and therapy session. We understand that there are many influences on a person and each influence impacts the ability to complete an activity. We will break down an activity into specific tasks while considering each person's physical skills, attention, body awareness, environment, nutrition, sleep, sensory needs, and more.</p>
           </div>
         </div>
       </div>
 
-      <div class="container-fluid slideshow-container my-5">
+      <div class="container-fluid testimonials-container my-5">
         <h2 class = "display-5 text-center">Testimonials</h2>
           <div class="quotes-carousel owl-carousel owl-theme">
               <div class="item">
@@ -135,22 +131,27 @@
           </div>
       </div>
 
-        <div class = "hours-container">
-          <div class = "hours-box">
-            <div class = "business-hours-text">
-              <h2>Opening Hours</h2>
-              <p>Monday and Thursday 9:00am - 6:00pm.</p>
-              <p>Hours to be added as needed.</p>
-              <p>Call to schedule an appointment today.</p>
+        <div class = "container hours-container p-3">
+          <div class = "row justify-content-center gy-2 d-flex align-items-center justify-content-center">
+            <div class="hours-box col-lg">
+              <h2 class="display-5">Opening Hours</h2>
+                <p>Monday and Thursday 9:00am - 6:00pm.</p>
+                <p>Hours to be added as needed.</p>
+                <p>Call to schedule an appointment today.</p>
+                <p>Physician referral is required to receive occupational therapy services. Please let me know if you need assistance with this.</p>
+            </div>
+            <div class="img-box col-lg">
+              <img class = "img-fluid" alt = "Crafting" src = "images/crafts.jpg"/>
             </div>
           </div>
-          <img class = "craftsimg" alt = "crafting" src = "images/crafts.jpg"></img>
         </div>
+
     </main>
-    <footer>
+
+    <footer class="container-fluid mt-3">
       <p>604 Oak St, Crosby, MN 56441, USA</p>
       <a id="facebook-link" href="https://www.facebook.com/people/Playful-Pathways-Therapy/100092405804453/?mibextid=LQQJ4d" target="_blank"><img  class = "facebook" alt = "facebook logo" src = "images/logo-facebook.png"></img></a>
-      <p>©2023 by Playful Pathways Therapy, LLC.</p>
+      <p>©2023 Copyright. Handcrafted by Sarah Olson</p>
     </footer>
 
     <!-- jQuery -->
@@ -158,7 +159,12 @@
 
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Bootstrap JS -->
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </body>
+
 </html>
 
