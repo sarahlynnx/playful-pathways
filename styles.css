@@ -206,6 +206,7 @@ body {
 .faq-text .col {
     min-width: 300px;
     max-width: 550px;
+    text-align: left;
 }
 
 .faq-text p {
@@ -218,20 +219,37 @@ body {
     margin-bottom: 20px;
 }
 
+.faq-question {
+    min-height: 65px;
+}
+
 /* PAGE 7 -BLOG */
 
 
 /* PAGE 8 -CONTACT US */
 
-.contact-us-container h2 {
-    color: var(--heading-color);
+.contact-us-container {
+    text-align: left;
 }
 
-.contact-us-text {
+.contact-us {
     color: var(--second-color);
     line-height: 2rem;
 }
 
+.contact-us-header {
+    color: var(--heading-color);
+    text-align: center;
+}
+
+.contact-description {
+    max-width: 330px;
+}
+
+.contact-us-info {
+    padding: 10px;
+    margin: auto;
+}
 
 #map {
     max-width: 500px;
@@ -244,7 +262,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     margin: auto;
-    width: 500px;
+    max-width: 500px;
     text-align: left;
 }
 
