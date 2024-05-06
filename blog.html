@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <link rel = "stylesheet" href = "styles.css">
     <script src="https://kit.fontawesome.com/5276d236c8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link rel = "stylesheet" href = "styles.css">
+
     <title>Playful Pathways Therapy</title>
   </head>
   
@@ -73,19 +72,45 @@
 
       </nav>
 
-        <div id="react-root" class = "blog-container">
+        <div id="react-root" class = "bloglist-container">
 
         </div>
 
     <footer class="container-fluid mt-3">
       <p>604 Oak St, Crosby, MN 56441, USA</p>
       <a id="facebook-link" href="https://www.facebook.com/people/Playful-Pathways-Therapy/100092405804453/?mibextid=LQQJ4d" target="_blank"><img  class = "facebook" alt = "facebook logo" src = "images/logo-facebook.png"></img></a>
-      <p>©2023 Copyright. Handcrafted by Sarah Olson</p>
+      <p>©2023 Copyright. Created by Sarah Olson</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    
+    <script>
+      function loadLibrary(url, callback) {
+        const script = document.createElement('script');
+        script.src = url;
+        script.onload = callback;
+        document.head.appendChild(script);
+      }
+    loadLibrary('https://unpkg.com/react@17/umd/react.production.min.js', () => {
+      loadLibrary('https://unpkg.com/react-dom@17/umd/react-dom.production.min.js', loadReactApp);
+    });
+    </script>
+    <script>
+      function loadReactApp() {
+        const script = document.createElement('script');
+        script.src = "http://localhost:3002/static/js/bundle.js";
+        script.onload = () => {
+          console.log('React app loaded successfully!');
+          if (!document.getElementById('react-root')) {
+            console.error('React-root element not found.');
+          }
+        };
+        script.onerror = () => {
+          console.error('Failed to load the React app.');
+        };
+        document.body.appendChild(script);
+      }
+    </script>
   </body>
 </html>
 

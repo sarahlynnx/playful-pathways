@@ -22,6 +22,10 @@ body {
     font-family: 'Open Sans';
 }
 
+header {
+    text-align: center;
+}
+
 /* Page 1 -HOME */
 
 .title {
@@ -302,6 +306,10 @@ input:focus, textarea:focus {
 }
 
 /* FOOTER */
+
+footer {
+    text-align: center;
+}
 
 .facebook {
     height: 40px;
