@@ -89,29 +89,20 @@
         const script = document.createElement('script');
         script.src = url;
         script.onload = callback;
+        script.onerror = () => console.error('Failed to load script:', url);
         document.head.appendChild(script);
       }
-    loadLibrary('https://unpkg.com/react@17/umd/react.production.min.js', () => {
-      loadLibrary('https://unpkg.com/react-dom@17/umd/react-dom.production.min.js', loadReactApp);
-    });
-    </script>
-    <script>
+      loadLibrary('https://unpkg.com/react@18.2.0/umd/react.production.min.js', () => {
+        loadLibrary('https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js', loadReactApp);
+      });
+
       function loadReactApp() {
         const script = document.createElement('script');
-        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-        script.src = "http://localhost:3000/static/js/bundle.js";
-        } else {
-            script.src = "https://sarahlynnx.github.io/Playful-Pathways/static/js/bundle.js";
-        }       
-        script.onload = () => {
-          console.log('React app loaded successfully!');
-          if (!document.getElementById('react-root')) {
-            console.error('React-root element not found.');
-          }
-        };
-        script.onerror = () => {
-          console.error('Failed to load the React app.');
-        };
+        script.src = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+          ? "http://localhost:3002/static/js/bundle.js"
+          : "https://blog-react-app-jp6n.onrender.com/static/js/main.2be4d338.js";       
+        script.onload = () => console.log('React app loaded successfully!');
+        script.onerror = () => console.error('Failed to load the React app.');
         document.body.appendChild(script);
       }
     </script>
