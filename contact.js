@@ -19,7 +19,7 @@ window.initMap = async function() {
 
 async function loadGoogleMapsAPI() {
   try {
-      const response = await fetch('http://localhost:3001/api/maps-config');
+      const response = await fetch('https://https://blog-server-8yo5.onrender.com/api/maps-config');
       const data = await response.json();
       const script = document.createElement('script');
       script.src = data.mapsURL;
