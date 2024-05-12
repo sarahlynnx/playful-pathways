@@ -256,6 +256,23 @@ header {
     margin: auto;
 }
 
+.contact-options {
+    min-width: 330px;
+}
+
+.separation-line {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .separation-line {
+        width: 330px;
+        border: 1px solid rgba(78, 38, 78, 0.2);
+        margin: 20px auto;
+        display: block;
+    }
+}
+
 #map {
     max-width: 500px;
     min-height: 474px;
