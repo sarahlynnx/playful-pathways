@@ -62,6 +62,10 @@ header {
 
 .practice-scope-box {
     color: var(--main-color);
+    text-align: justify;
+}
+.practice-scope-box h2 {
+    text-align: center;
 }
 
 .practice-scope-box p {
@@ -96,6 +100,22 @@ header {
 
 .hours-box {
     text-align: center;
+}
+
+.schedule {
+    width: 250px;
+    margin: auto;
+}
+
+.schedule .day {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 8px;
+}
+
+.schedule .day .time {
+    margin-left: auto;
+    white-space: nowrap; 
 }
 
 .hours-box h2 {
