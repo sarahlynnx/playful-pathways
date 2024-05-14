@@ -41,7 +41,7 @@ header {
 
 .welcome-box {
     width: 80%;
-    max-width: 750px;
+    max-width: 700px;
     height: auto;
     margin: auto;
     margin-bottom: 20px;
@@ -129,11 +129,16 @@ header {
     background-color:  var(--main-color);
 }
 
+.therapist-about {
+    text-align: justify;
+}
+
 .staff-container-box {
     margin: auto;
     max-width: 700px;
     height: auto;
     line-height: 2rem;
+    text-align: center;
 }
 
 /* PAGE 3 -SERVICES */
@@ -228,9 +233,6 @@ header {
     min-height: 65px;
 }
 
-/* PAGE 7 -BLOG */
-
-
 /* PAGE 8 -CONTACT US */
 
 .contact-us-container {
@@ -240,6 +242,7 @@ header {
 .contact-us {
     color: var(--second-color);
     line-height: 2rem;
+    margin: auto;
 }
 
 .contact-us-header {
