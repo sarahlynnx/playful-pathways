@@ -33,6 +33,13 @@ header {
     font-weight: bold;
     font-family: 'Poppins';
     color: var(--second-color);
+    letter-spacing: 1px;
+    font-size: xx-large;
+}
+
+.subtitle {
+    font-weight: 300;
+    color: #4e264e96;
 }
 
 .welcome-container {
