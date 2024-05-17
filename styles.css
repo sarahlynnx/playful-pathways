@@ -99,6 +99,12 @@ header {
     margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    .review {
+        max-width: unset;
+    }
+}
+
 .hours-container {
     background-color: var(--heading-color);
     Padding: 40px;
