@@ -55,7 +55,6 @@ header {
 }
 
 .welcome-container h1 {
-    margin: 20px auto 20px auto;
     color:  var(--heading-color);
 }
 
@@ -151,7 +150,6 @@ header {
 
 .staff-img-container {
     background-color:  var(--main-color);
-    padding-top: 20px;
 }
 
 .staff-img {
@@ -185,9 +183,8 @@ header {
     max-width: 900px;
 }
 
-.services-box h2 {
+.services-box-header {
     color: var(--heading-color);
-    text-decoration: underline;
 }
 
 /* PAGE 4 -PATIENT INFORMATION */ 
@@ -202,9 +199,16 @@ header {
     line-height: 2rem;
 }
 
-.patient-portal-container-text h2 {
-    padding-top: 30px;
-    padding-bottom: 50px;
+.patient-portal-link {
+    color: black;
+}
+
+.patient-portal-link:hover {
+    color: var(--tertiary-color);
+}
+
+.patient-portal-header {
+    color: var(--heading-color);
 }
 
 .patient-portal-container-text h2 a {
@@ -213,10 +217,6 @@ header {
 
 .patient-portal-container-text h2 a:hover {
     color: var(--heading-color);
-}
-
-.patient-information-img {
-    margin-bottom: 30px;
 }
 
 /* PAGE 5 -INSURANCE */
