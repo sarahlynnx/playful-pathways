@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        const path = window.location.pathname;
+        const page = path.split('/').pop();
+        if (page && !page.includes('.')) {
+            window.location.href = page + '.html';
+        } else {
+            document.write('Page not found.');
+        }
+    </script>
+</head>
+<body>
+    Redirecting...
+</body>
+</html>
