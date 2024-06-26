@@ -1,120 +1,205 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/5276d236c8.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">
-                emailjs.init("PDtWB8N0CB5q_1niW");
-        </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5276d236c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      emailjs.init("PDtWB8N0CB5q_1niW");
+    </script>
     <title>Playful Pathways Therapy</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg">
-
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg" />
   </head>
-  
-  <body data-spy="scroll" data-target=".navbar" data-offset="100">
 
+  <body data-spy="scroll" data-target=".navbar" data-offset="100">
     <header class="container-fluid">
-      <img class = "img-fluid" alt = "logo" src = "images/logo1.svg"></img>
+      <img class="img-fluid" alt="logo" src="images/logo1.svg" />
       <h3 class="title my-1">Playful Pathways</h3>
       <h6 class="subtitle">Pediatric Occupational Therapy</h6>
     </header>
 
     <nav class="navbar navbar-expand-sm custom-nav">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="container">
-          
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-          
-            <ul class="navbar-nav">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="collapsibleNavbar"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/playful-pathways/">Home</a>
+            </li>
 
-              <li class="nav-item">
-                  <a class="nav-link" href="/playful-pathways/">Home</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link" href="meet_your_therapist">Meet Your Therapist</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="meet_your_therapist"
+                >Meet Your Therapist</a
+              >
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="services">Our Services</a>
-              </li>
-            
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="patient_information" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Patient Information</a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="patient_information">Patient Information</a>
-                    <a class="dropdown-item" href="insurance">Insurance</a>
-                    <a class="dropdown-item" href="faq">FAQ</a>
-                  </div>
-              </li>   
+            <li class="nav-item">
+              <a class="nav-link" href="services">Our Services</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="blog">Blog</a>
-              </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="patient_information"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Patient Information</a
+              >
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="patient_information"
+                  >Patient Information</a
+                >
+                <a class="dropdown-item" href="insurance">Insurance</a>
+                <a class="dropdown-item" href="faq">FAQ</a>
+              </div>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="contact_us">Contact Us</a>
-              </li>  
-              
-            </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="blog">Blog</a>
+            </li>
 
-          </div>
-
+            <li class="nav-item">
+              <a class="nav-link" href="contact_us">Contact Us</a>
+            </li>
+          </ul>
         </div>
-
+      </div>
     </nav>
-    <main id = "main-doc">
-        <div class="container-fluid faq-container p-5">
-            <h2 class="text-center display-5 mb-5">FAQs</h2>
-            <div class="container">
-                <div class="faq-text justify-content-between p-4 row row-cols-md-2 row-cols-sm-1">
-                    <div class="col">
-                        <h3 class="faq-question">What is your new patient procedure?</h3>
-                        <p>Patient's will start with a consult call to discuss concerns and referral to OT services. We will then schedule an evaluation which consists of parent interview, observation, and assessments depending on concerns. From there, eligibility and frequency will be determined for ongoing treatment sessions.</p>
-                    </div>
-                    <div class="col">
-                        <h3 class="faq-question">What is the patient portal?</h3>
-                        <p>The patient portal is specific to each client. It provides a way for the therapist and client to communicate securely. In the portal, you are able to sign and submit intake and consent forms, upload documents, schedule recurring appointments, receive therapist provided documents and home education, and pay for sessions securely.</p>
-                    </div>
-                    <div class="col">
-                        <h3 class="faq-question">How do I get a referral for occupational therapy?</h3>
-                        <p>To get a referral for occupational therapy, you first need to discuss your concerns with your physician. Your physician will then send a referral for services directly to Playful Pathways Therapy. Referrals should be faxed to 218-520-3923. Once a referral is received, you will then be contacted by Playful Pathways Therapy to schedule an evaluation.</p>
-                    </div>
-                    <div class="col">
-                        <h3 class="faq-question">How much will my copayment be?</h3>
-                        <p>Copayment and coinsurances depend on the client's health insurance plan and deductible. We advise calling your health insurance plan for verification of occupational therapy services.</p>
-                    </div>
-                    <div class="col">
-                      <h3 class="faq-question">I don't have my insurance card with me, can I still receive treatment?</h3>
-                      <p>Playful Pathways Therapy will ask for your insurance information prior to your first visit in order to verify coverage of OT services and receive pre-authorization. We will also provide a personalized email link to your client portal prior to your first visit. In the portal, you are able to submit a copy of your insurance card, as well as informed consents and intake forms.</p>
-                    </div>
-                    <div class="col">
-                        <h3 class="faq-question">How do I make payments for an invoice or prompt same day payment?</h3>
-                        <p>Payments can be made by cash or check. They can also be made online through your patient portal for credit/debit and HSA cards. These payments are processed securely through Stripe.</p>
-                    </div>
+    <main id="main-doc">
+      <div class="container-fluid faq-container p-5">
+        <h2 class="text-center display-5 mb-5">FAQs</h2>
+        <div class="container">
+          <div
+            class="faq-text justify-content-between p-4 row row-cols-md-2 row-cols-sm-1"
+          >
+            <div class="col">
+              <h3 class="faq-question">What is your new patient procedure?</h3>
+              <p>
+                Patient's will start with a consult call to discuss concerns and
+                referral to OT services. We will then schedule an evaluation
+                which consists of parent interview, observation, and assessments
+                depending on concerns. From there, eligibility and frequency
+                will be determined for ongoing treatment sessions.
+              </p>
             </div>
+            <div class="col">
+              <h3 class="faq-question">What is the patient portal?</h3>
+              <p>
+                The patient portal is specific to each client. It provides a way
+                for the therapist and client to communicate securely. In the
+                portal, you are able to sign and submit intake and consent
+                forms, upload documents, schedule recurring appointments,
+                receive therapist provided documents and home education, and pay
+                for sessions securely.
+              </p>
+            </div>
+            <div class="col">
+              <h3 class="faq-question">
+                How do I get a referral for occupational therapy?
+              </h3>
+              <p>
+                To get a referral for occupational therapy, you first need to
+                discuss your concerns with your physician. Your physician will
+                then send a referral for services directly to Playful Pathways
+                Therapy. Referrals should be faxed to 218-520-3923. Once a
+                referral is received, you will then be contacted by Playful
+                Pathways Therapy to schedule an evaluation.
+              </p>
+            </div>
+            <div class="col">
+              <h3 class="faq-question">How much will my copayment be?</h3>
+              <p>
+                Copayment and coinsurances depend on the client's health
+                insurance plan and deductible. We advise calling your health
+                insurance plan for verification of occupational therapy
+                services.
+              </p>
+            </div>
+            <div class="col">
+              <h3 class="faq-question">
+                I don't have my insurance card with me, can I still receive
+                treatment?
+              </h3>
+              <p>
+                Playful Pathways Therapy will ask for your insurance information
+                prior to your first visit in order to verify coverage of OT
+                services and receive pre-authorization. We will also provide a
+                personalized email link to your client portal prior to your
+                first visit. In the portal, you are able to submit a copy of
+                your insurance card, as well as informed consents and intake
+                forms.
+              </p>
+            </div>
+            <div class="col">
+              <h3 class="faq-question">
+                How do I make payments for an invoice or prompt same day
+                payment?
+              </h3>
+              <p>
+                Payments can be made by cash or check. They can also be made
+                online through your patient portal for credit/debit and HSA
+                cards. These payments are processed securely through Stripe.
+              </p>
+            </div>
+          </div>
         </div>
-
+      </div>
     </main>
     <footer class="container-fluid mt-3">
-      <p>604 Oak St, Crosby, MN 56441, USA</p>
-      <a id="facebook-link" href="https://www.facebook.com/people/Playful-Pathways-Therapy/100092405804453/?mibextid=LQQJ4d" target="_blank"><img  class = "facebook" alt = "facebook logo" src = "images/logo-facebook.png"></img></a>
-      <p>©2023 Copyright. Created by Sarah Olson</p>
+      <p class="mb-0">604 Oak St, Crosby, MN 56441, USA</p>
+      <a
+        id="facebook-link"
+        href="https://www.facebook.com/people/Playful-Pathways-Therapy/100092405804453/?mibextid=LQQJ4d"
+        target="_blank"
+        ><i
+          class="fa-brands fa-facebook-f fa-xl my-4"
+          style="color: #4e264e"
+        ></i
+      ></a>
+      <p>©2024 Copyright. Created by Sarah Olson</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
