@@ -1,50 +1,70 @@
-Playful Pathways is a meticulously crafted website designed to showcase a clinic's services and facilitate seamless communication between potential clients and the clinic. This project leverages modern web development technologies and APIs to provide a user-friendly and interactive experience. Here’s a detailed breakdown of its features and the skills demonstrated:
+# Playful Pathways
 
-## Key Features  
-  
-Responsive Design:
+Static multi-page website for a pediatric occupational therapy clinic in Crosby, Minnesota. Provides clinic information, service details, insurance and patient portal access, an FAQ, a blog, and a contact form for new and existing patients.
 
-- Utilizes Bootstrap to ensure the website is fully responsive and visually appealing across various devices, including desktops, tablets, and smartphones.  
-  
-Contact Form Integration with EmailJS:  
-  
-- Implements a dynamic contact form that uses EmailJS to send emails directly to the clinic owner, allowing visitors to easily get in touch without leaving the website.  
-  
-Google Maps API Integration:  
-  
-- Integrates Google Maps API to display the clinic’s location, helping users find and navigate to the clinic effortlessly.
-Professional Layout and Styling:  
+**Stack:** HTML5, CSS3, JavaScript, Bootstrap 5, jQuery, Owl Carousel, EmailJS, Google Maps API
 
-Employs CSS and Bootstrap to create a clean, professional, and inviting design. This ensures that the content is well-organized and easy to read.
-JavaScript for Interactivity:  
+## What it does
 
-Uses JavaScript to add interactive elements, enhancing the overall user experience. This includes form validation, smooth scrolling, and other dynamic features.  
-  
-Informative Content:
+**Pages:**
+- Homepage with welcome content, image carousel of therapy activities, practice approach, testimonials carousel, and clinic hours
+- Meet Your Therapist page with credentials, experience, and mission statement
+- Services page covering 6 therapy areas (fine motor, gross motor, infant development, sensory integration, social-emotional regulation, ADL)
+- Patient Information page linking to the external patient portal
+- Insurance page listing accepted plans
+- FAQ page with 6 common questions about new patient procedures, referrals, and payments
+- Blog page that loads a separate React app from a Render-hosted backend
+- Contact page with form, address, phone, fax, and an embedded Google Map
 
-- Provides comprehensive information about the clinic’s services, mission, and contact details, ensuring that visitors have all the information they need.  
+**Interactive features:**
+- Contact form with name, email, phone (10-digit pattern validation), and message fields
+- EmailJS integration sends form submissions directly to the clinic email
+- Two Owl Carousel instances for therapy photos and rotating testimonials
+- Google Maps Advanced Markers showing the clinic location
+- Responsive Bootstrap navbar with mobile dropdown
 
-## Skills Demonstrated  
-  
-Front-End Development:
+**External integrations:**
+- EmailJS for contact form delivery
+- Google Maps API loaded via a Render-hosted config endpoint
+- ClientSecure patient portal link for intake forms, scheduling, and payments
+- React blog application served from a separate Render deployment
+- Facebook profile link in footer
 
-- Proficient use of HTML, CSS, and JavaScript to create a functional and aesthetically pleasing website.  
+## File structure
 
-Responsive Web Design:  
+```
+playful-pathways/
+  index.html                    # Homepage
+  meet_your_therapist.html      # Therapist bio
+  services.html                 # 6 service areas
+  patient_information.html      # Portal access
+  insurance.html                # Accepted plans
+  faq.html                      # 6 Q&A pairs
+  blog.html                     # Loads external React blog
+  contact_us.html               # Form + map
+  401.html                      # Redirect handler
+  styles.css                    # Single stylesheet with CSS variables
+  script.js                     # Owl Carousel initialization
+  contact.js                    # Google Maps loader + EmailJS handler
+  images/                       # 14 therapy photos + logo (SVG)
+```
 
-- Expertise in using Bootstrap to develop a responsive layout that adapts seamlessly to different screen sizes and devices.
-API Integration:
+## Design
 
-- Skillful integration of EmailJS for handling email communication and Google Maps API for location services.  
-  
-User Experience (UX) Design:  
-  
-- Focus on creating an intuitive and user-friendly interface that ensures easy navigation and interaction.
-Form Handling and Validation:
+- CSS custom properties for theme colors (light purple, dark purple)
+- Mobile-first responsive design with a 768px breakpoint
+- Bootstrap 5.3.2 grid and components
+- Google Fonts (Open Sans, Poppins, Roboto, BIZ UDPGothic)
+- Font Awesome 5 icons
 
-- Implementing robust form handling and validation techniques to enhance user interaction and data accuracy.  
-  
-  
-Webpage Preview:
+## Development
 
-![playfulpathways](https://github.com/sarahlynnx/Playful-Pathways/assets/142362888/e0053d27-95de-4fec-b858-4020303fb8dd)
+No build process or dependencies. Open any HTML file directly in a browser, or serve the directory with a static server:
+
+```bash
+python3 -m http.server 8000
+# or
+npx serve .
+```
+
+For the contact form and map to work locally, the EmailJS and Google Maps configuration endpoints must be reachable.
